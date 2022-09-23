@@ -1,0 +1,36 @@
+.gridRow {
+    border: 1px solid gray;
+    min-width: 100px;
+    min-height: 100px;
+    display: inline-block;
+}
+
+@keyframes hover {
+    0% {
+    }
+    100% {
+    }
+  }
+
+.cell {
+    border: 1px solid gray;
+    min-width: 100px;
+    min-height: 100px;
+    display: inline-block;
+    animation-name: hover;
+    animation-duration: 1ms;
+    animation-fill-mode: backwards;
+    animation-play-state: paused;      
+    
+    
+}
+
+
+.cell:hover,
+.cell:active,
+.cell:focus{
+    background-color: black;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+
+}
